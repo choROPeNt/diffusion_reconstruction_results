@@ -15,7 +15,7 @@ def plot_images(img,cls,n):
 
 
 def save_images(im,cl,DIR,n):
-    print('saving %s' %os.path.join(DIR,cl + '_' + str(n).zfill(3) + '.tif'))
+    print('saving %s' %os.path.join(DIR,cl + '_' + str(n+1).zfill(3) + '.tif'))
     im.save(os.path.join(DIR,cl + '_' + str(n).zfill(3) + '.tif'))
 
 def main():
