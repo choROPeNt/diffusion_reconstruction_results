@@ -29,7 +29,11 @@ python3 -m pip install -r requirements.txt
 ```
 
 ## Usage
-
+Just to vizualize the sampled microstructures you can set only the `--file=<path-to-file>` argument:
+```
+python vizualize_samples.py --file=<path-to-file> --dir=<path-to-save-images>
+```
+If you want to save the samples in a ´*.tif´ image format you have to specify the output directory with the argument `--dir=<path-to-save-images>`:
 
 ```
 python vizualize_samples.py --file=<path-to-file> --dir=<path-to-save-images>
