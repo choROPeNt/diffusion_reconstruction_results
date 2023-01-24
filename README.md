@@ -1,10 +1,13 @@
-[![arXiv](https://img.shields.io/badge/arXiv-2211.13497-00ff00.svg)](https://doi.org/10.48550/arXiv.2211.13497)
+[![arXiv](https://img.shields.io/badge/arXiv-2211.13497-00ff00.svg)](https://doi.org/10.48550/arXiv.2211.13497) 
+
+[![arXiv](https://img.shields.io/badge/arXiv-2102.09672-00ff00.svg)]( 	https://doi.org/10.48550/arXiv.2102.09672) 
 
 # Results of "Conditional diffusion-based microstructure reconstruction"
 
-This repository contains all samples generated in the paper ["Conditional diffusion-based microstructure reconstruction"](https://doi.org/10.48550/arXiv.2211.13497). For training and sampling of the conditional diffusion models the implementation of OpenAI [improved-difusion](https://github.com/openai/improved-diffusion) was used.
+This repository contains all samples generated in the paper ["Conditional diffusion-based microstructure reconstruction"](https://doi.org/10.48550/arXiv.2211.13497). For training and sampling of the conditional diffusion models the implementation of OpenAI [improved-difusion](https://github.com/openai/improved-diffusion) and ["Improved Denoising Diffusion Probabilistic Models"]( 	
+https://doi.org/10.48550/arXiv.2102.09672) was used, respectively.
 
-The following `READDME.md` contains the instructions to vizualize the generated samples. The samples are stored as `*.npz` containing 64 samples for each class and correspdoning model introduced in ["Conditional diffusion-based microstructure reconstruction"](https://doi.org/10.48550/arXiv.2211.13497).
+The following `READDME.md` contains the instructions to vizualize the generated samples. The samples are stored as `*.npz` containing 64 samples the size 256x256x3 `[h,w,c]` for each class and correspdoning model introduced in ["Conditional diffusion-based microstructure reconstruction"](https://doi.org/10.48550/arXiv.2211.13497).
 
 ## Prerequisites
 
