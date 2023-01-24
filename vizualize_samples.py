@@ -15,7 +15,8 @@ def plot_images(img,cls,n):
 
 
 def save_images(im,cl,DIR,n):
-    im.save(os.path.join(DIR,[cl + '_' + str(n).zfill(3)]))
+    print(os.path.join(DIR,cl + '_' + str(n).zfill(3) + '.tif'))
+    im.save(os.path.join(DIR,cl + '_' + str(n).zfill(3) + '.tif'))
 
 def main():
     parser = argparse.ArgumentParser(description='ShearDetect')
@@ -39,6 +40,8 @@ def main():
         for n, (img, cl) in enumerate(zip(imgs,cls)):
             im = plot_images(img,cl,n)
             if DIR is not None:
+                if not os.path.exists(DIR):
+                    os.makedirs(DIR)
                 save_images(im,cl,DIR,n)
 
 
