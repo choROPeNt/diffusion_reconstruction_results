@@ -38,9 +38,12 @@ If you want to save the samples in ´*.tif´ imagefile format you have to specif
 ```
 python vizualize_samples.py --file=<path-to-file> --dir=<path-to-save-images>
 ```
-## example
-If you run 
+## examples
+The following table shows selected images from the coresponding sample files and class, respectively.
 
-```
-python vizualize_samples.py --file=<path-to-file> 
-```
+
+| class   |     sample file      |  image |
+|----------|:-------------:|------:|
+| martensite |  left-aligned | ![](examples/martensite.tif) |
+| biological |    centered   |   ![](examples/biological.tif)  |
+| FVC60 | right-aligned |    ![](examples/FVC60.tif)  |
