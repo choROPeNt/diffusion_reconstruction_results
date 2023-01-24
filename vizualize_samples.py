@@ -10,12 +10,12 @@ def plot_images(img,cls,n):
     im = Image.fromarray(img)
     plt.imshow(im)
     plt.title(cls)
-    plt.show()
+    plt.draw()
     return im
 
 
 def save_images(im,cl,DIR,n):
-    print(os.path.join(DIR,cl + '_' + str(n).zfill(3) + '.tif'))
+    print('saving %s' %os.path.join(DIR,cl + '_' + str(n).zfill(3) + '.tif'))
     im.save(os.path.join(DIR,cl + '_' + str(n).zfill(3) + '.tif'))
 
 def main():
@@ -38,15 +38,13 @@ def main():
 
 
         for n, (img, cl) in enumerate(zip(imgs,cls)):
+  
             im = plot_images(img,cl,n)
             if DIR is not None:
                 if not os.path.exists(DIR):
                     os.makedirs(DIR)
                 save_images(im,cl,DIR,n)
-
-
-
-
+            plt.show()
 
     else:
         print("you must provide a *.npz File for vizualization")
