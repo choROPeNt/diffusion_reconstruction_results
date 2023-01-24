@@ -6,7 +6,7 @@ __pycache__/
 # C extensions
 *.so
 # folders
-./sample_image
+./samples_images
 
 # Distribution / packaging
 .Python
