@@ -4,14 +4,53 @@ import numpy as np
 from PIL import Image
 from numpy import load
 import matplotlib.pyplot as plt
+import argparse
 
-def plot_images():
-    pass
+def plot_images(img,cls,n):
+    im = Image.fromarray(img)
+    plt.imshow(im)
+    plt.title(cls)
+    plt.show()
+    return im
+
+
+def save_images(im,cl,DIR,n):
+    im.save(os.path.join(DIR,[cl + '_' + str(n).zfill(3)]))
 
 def main():
-    file = ".//samples//DaEv_256_cond13_300k//samples_biological_64x256x256x3.npz"
-    data = load(file)
-    print(data)
+    parser = argparse.ArgumentParser(description='ShearDetect')
+    parser.add_argument('--file', default=None, help='path to *.npz-file')
+    parser.add_argument('--dir', default=None, help='path for saving images')
+    args = parser.parse_args()
+
+    ## get input data
+    FILE = args.file
+    DIR  = args.dir
+
+
+    if FILE is not None and os.path.splitext(FILE)[-1] == '.npz':
+        print('creating images from %s' %os.path.split(FILE)[-1])
+        data = load(FILE)
+
+        imgs = [img for img in data['arr_0']]
+        cls = [os.path.split(FILE)[-1].split('_')[1]]*len(imgs)
+
+
+        for n, (img, cl) in enumerate(zip(imgs,cls)):
+            im = plot_images(img,cl,n)
+            if DIR is not None:
+                save_images(im,cl,DIR,n)
+
+
+
+
+
+    else:
+        print("you must provide a *.npz File for vizualization")
+    
+    
+    
+    
 
 
 if __name__ == "__main__":
