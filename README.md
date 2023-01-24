@@ -42,7 +42,7 @@ python vizualize_samples.py --file=<path-to-file> --dir=<path-to-save-images>
 The following table shows selected images from the coresponding sample files and class, respectively.
 
 
-| class    |     sample file      |  image |
+| class    |     sample file      |  example image |
 |----------|:-------------:|------:|
 | martensite |  ![samples_martensite_64x256x256x3.npz](samples/DaEv_256_cond13_300k/) | ![](examples/martensite.png) |
 | biological |    ![samples_biological_64x256x256x3.npz](samples/DaEv_256_cond13_300k/)   |   ![](examples/biological.png)  |
