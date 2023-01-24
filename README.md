@@ -42,8 +42,8 @@ python vizualize_samples.py --file=<path-to-file> --dir=<path-to-save-images>
 The following table shows selected images from the coresponding sample files and class, respectively.
 
 
-| class   |     sample file      |  image |
+| class    |     sample file      |  image |
 |----------|:-------------:|------:|
-| martensite |  left-aligned | ![](examples/martensite.tif) |
-| biological |    centered   |   ![](examples/biological.tif)  |
-| FVC60 | right-aligned |    ![](examples/FVC60.tif)  |
+| martensite |  left-aligned | ![](examples/martensite.png) |
+| biological |    centered   |   ![](examples/biological.png)  |
+| FVC60      | right-aligned      |    ![](examples/FVC60.png)  |
