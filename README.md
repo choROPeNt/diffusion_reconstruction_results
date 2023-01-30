@@ -33,7 +33,7 @@ Just to vizualize the sampled microstructures you can set only the `--file=<path
 ```
 python vizualize_samples.py --file=<path-to-file> 
 ```
-This is the expected outpt as a `matplotib` figure:
+This is the expected outpt as a `matplotlib` figure:
 
 
 ![](examples/Nanowires_grid.png)
