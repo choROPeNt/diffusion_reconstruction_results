@@ -30,10 +30,15 @@ def main():
         imgs = [img for img in data['arr_0']]
         cls = [os.path.split(FILE)[-1].split('_')[1]]*len(imgs)
         
-        fig = plt.figure(1)
+
+
         rows = int(np.rint(np.sqrt(len(imgs))))
         
         cols = int(np.rint(len(imgs)/rows))
+
+        fig = plt.figure(figsize=(1.25*cols, 1.375*rows))
+        
+
 
         for n, (img, cl) in enumerate(zip(imgs,cls)):
             
@@ -41,14 +46,13 @@ def main():
             im = Image.fromarray(img)
 
             ax.imshow(im)
-            ax.set_title(cls)
-
-
-
+            ax.set_title(cl)
+            ax.axis('off')
             if DIR is not None:
                 if not os.path.exists(DIR):
                     os.makedirs(DIR)
                 save_images(im,cl,DIR,n)
+        # fig.tight_layout(pad=20)
         plt.show()
 
     else:
