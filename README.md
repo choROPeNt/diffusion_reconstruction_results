@@ -33,6 +33,12 @@ Just to vizualize the sampled microstructures you can set only the `--file=<path
 ```
 python vizualize_samples.py --file=<path-to-file> 
 ```
+This is the expected outpt as a `matplotib` figure:
+
+
+![](examples/Nanowires_grid.png)
+
+
 If you want to save the samples in ´*.tif´ imagefile format you have to specify the output directory with the argument `--dir=<path-to-save-images>`:
 
 ```
