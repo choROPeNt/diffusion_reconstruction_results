@@ -1,0 +1,53 @@
+# This CITATION.cff file was generated with cffinit.
+# Visit https://bit.ly/cffinit to generate yours today!
+
+cff-version: 1.2.0
+title: >-
+  Results of "Conditional diffusion-based microstructure
+  reconstruction"
+message: >-
+  If you use this dataset, please cite it using the metadata
+  from this file.
+type: dataset
+authors:
+  - given-names: Christian
+    family-names: Düreth
+    email: christain.duereth@tu-dresden.de
+    orcid: 'https://orcid.org/0000-0002-6817-1020'
+    affiliation: >-
+      TU Dresden - Institute of Lightweight Engineering and
+      Polymer Technology
+  - given-names: Paul
+    family-names: Seibert
+    email: paul.seibert@tu-dresden.de
+    affiliation: TU Dresden - Institute of Solid Mechanics
+    orcid: 'https://orcid.org/0000-0002-8774-8462'
+  - given-names: Dennis
+    family-names: Rücker
+    email: dennis.ruecker@mailbox.tu-dresden.de
+    affiliation: TU Dresden - Institute of Solid Mechanics
+  - given-names: Stephanie
+    family-names: Handford
+    email: stephanie.handford@mailbox.tu-dresden.de
+    affiliation: University of Mississippi
+  - given-names: Markus
+    family-names: Kästner
+    email: markus.kaestner@tu-dresden.de
+    affiliation: TU Dresden - Institute of Solid Mechanics
+    orcid: 'https://orcid.org/0000-0003-3358-1545'
+  - given-names: Maik
+    family-names: Gude
+    orcid: 'https://orcid.org/0000-0003-1370-064X'
+    email: maik.gude@tu-dresden.de
+    affiliation: >-
+      TU Dresden - Institute of Lightweight Engineering and
+      Polymer Technology
+identifiers:
+  - type: doi
+    value: 10.48550/arXiv.2211.13497
+    description: >-
+      Conditional diffusion-based microstructure
+      reconstruction
+repository-code: >-
+  https://github.com/choROPeNt/diffusion_reconstruction_results
+license: MIT
