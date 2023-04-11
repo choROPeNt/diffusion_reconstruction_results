@@ -46,9 +46,10 @@ def main():
                 img = img.reshape(img.shape[0],img.shape[1])
 
             ax = fig.add_subplot(rows,cols,n+1)
+
             im = Image.fromarray(img)
 
-            ax.imshow(im,cmap=mpl.colormaps['binary'])
+            ax.imshow(im.convert('RGB'),cmap='gray')
             ax.set_title(cl)
             ax.axis('off')
             if DIR is not None:
